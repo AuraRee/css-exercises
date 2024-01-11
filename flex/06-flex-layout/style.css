@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  width: 600px;
+  max-width: 600px;
 }
 
 button {
@@ -24,4 +24,55 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/*Aura's Solution */
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+/*  border: 1px solid rebeccapurple; */
+  flex: initial;
+}
+
+ul.left-links, ul.right-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  list-style: none;
+/*  border: 1px solid black; */
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+  font-weight: 700px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ /* border: 2px solid red; */
+  flex: 1;
+  gap: 16px;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #eeeeee;
+  border-radius: 0 0 20px 20px;
+}
+
+button {
+  padding: 8px 16px;
 }
