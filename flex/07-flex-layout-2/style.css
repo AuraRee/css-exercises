@@ -27,3 +27,61 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Ora's answer... */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.header .text {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  flex: 0;
+  min-width: 300px;
+}
+
+a, ul {
+  text-decoration: none;
+  color: #eee;
+  list-style: none;
+  font-size: 24px;
+}
+
+ul {
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  padding: 16px;
+  margin: 0;
+
+}
